@@ -1,0 +1,141 @@
+header {
+    width: 90%;
+    height: 12%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+
+
+}
+
+#logo {
+    width: 30%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#icone_logo {
+    width: 4vw;
+    height: 4vw;
+    background-image: url(./../ident\ yet\ approachable\ facial\ expressions.\ The\ image\ should\ feature\ simple\,\ cl.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+#profissao {
+    width: 80%;
+    height: 80%;
+    
+    
+    font-family: "Archivo Black";font-size: 0.65vw;
+    color:#0A0C0C ;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+#profissao h1{
+    border-bottom: solid 1px #C9011E;
+
+}
+#btns_cabecalho {
+    width: 40%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.btn_cabecalho {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.btn_cabecalho i{
+    font-size: 1.2vw;
+    color:#0A0C0C;
+    transition: all 0.2 ease-in-out;
+    margin: 0% 5%;
+   
+
+}
+
+.btn_cabecalho h5{
+    font-size: 1.0vw;
+    font-family: "Archivo Black";
+    border-bottom: solid 1px #C9011E;
+
+}
+@media (max-width: 480px) {
+    header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    #icone_logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    #profissao {
+        font-size: 1rem; /* Use rem para manter a responsividade */
+        text-align: center;
+        overflow-wrap: break-word; /* Impede que palavras fiquem "bugadas" */
+    }
+
+    #btns_cabecalho{
+        width: 100%;
+    }
+
+    .btn_cabecalho {
+        width: 50px; 
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .btn_cabecalho i {
+        font-size: 1.2rem; /* Rem adaptável */
+    }
+
+    .btn_cabecalho h5 {
+        font-size: 0.9rem; /* Reduza para manter legibilidade */
+        overflow-wrap: break-word;
+    }
+
+    .btn_cabecalho h1 {
+        display: none;
+    }
+    #icone_logo {
+        width: 70px; /* Aumente para 70px */
+        height: 70px; /* Aumente para 70px */
+    }
+    
+}

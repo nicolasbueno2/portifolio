@@ -1,0 +1,118 @@
+section{
+    width: 100%;
+    height: 78%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+#img_prin{
+    width: 45%;
+    height: 100%;
+
+
+}
+
+#textos_prin{
+    width: 30%;
+    height: 70%;
+        
+   
+}
+
+#nome{
+    width: 100%;
+    height: 30%;
+
+    font-family: "Bebas Neue";
+    font-size: 7vw;
+    color: #0A0C0C;
+    display: flex;
+    align-items: center;
+}
+
+#sobrenome{
+    width: 100%;
+    height: 30%;
+
+    font-family: "Bebas Neue";
+    font-size: 7vw;
+    color: #da2020;
+    display: flex;
+    align-items: center; 
+}
+
+#descricao{
+    width: 100%;
+    height: 37%;
+    
+    font-family: "Noto Serif";
+    font-size: 1vw;
+    color:#0A0C0C;
+    display: flex;
+    align-items: center; 
+    text-align: justify;
+}
+b{
+    color: #da2020;
+}
+#imagem{
+    position: absolute;
+    width: auto ;
+    height: 77vh;
+    left: auto  ;
+    
+    height: 14;
+    z-index: -1;
+}
+
+@media (max-width: 480px) {
+    section {
+        padding-top: 80px; /* Espaço extra para evitar sobreposição com o header */
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Espaço entre os elementos dentro do section */
+    }
+    
+    #img_prin {
+        width: 90%; /* Aumenta a largura da imagem principal */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+    
+    #textos_prin {
+        width: 100%; /* Ajusta a largura do container de textos */
+        height: auto;
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    #nome {
+        font-size: 9vw; /* Tamanho maior para destaque */
+        margin: 0; /* Remove margens para aproximar o sobrenome */
+    }
+    
+    #sobrenome {
+        font-size: 9vw; /* Tamanho maior para o sobrenome */
+        color: #da2020; /* Mantém a cor do sobrenome */
+        margin: 0; /* Remove margens para aproximar o nome */
+    }
+    #descricao {
+        font-size: 4vw; /* Aumenta a legibilidade da descrição */
+        padding: 0 10px; /* Adiciona padding lateral */
+    }
+    
+    #imagem {
+        position: fixed; /* Mantém a imagem de fundo fixa */
+        top: 0;
+        left: 0;
+        width: 100%; /* Ocupa toda a largura da tela */
+        height: 100vh; /* Ocupa toda a altura da tela */
+        opacity: 0.2; /* Reduz a opacidade para um efeito mais suave */
+        z-index: -1; /* Mantém a imagem atrás dos outros elementos */
+        background-size: cover; /* Garante que a imagem cubra todo o fundo */
+        background-position: center; /* Centraliza a imagem */
+    }
+}
